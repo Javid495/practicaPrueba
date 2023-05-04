@@ -40,15 +40,70 @@
             <h3>Gestor de clientes</h3>
             <ul class="nav nav-tabs">
                 <li class="nav-item">
-                  <a class="nav-link" href="" id="registro">Registar</a>
+                  <a class="nav-link tabOpcion" href="#"  data-verocultar ='["#reg",["#listar","#buscar"]]'>Registar</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#" id="listar">Listar Clientes</a>
+                  <a class="nav-link tabOpcion" href="#" data-verocultar ='["#listar",["#reg","#buscar"]]' >Listar Clientes</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="" id="buscar">Buscar</a>
+                  <a class="nav-link tabOpcion" href="#" data-verocultar ='["#buscar",["#listar","#reg"]]' >Buscar</a>
                 </li>
               </ul>
+        </div>
+        <div class="container" >
+          <div  id="reg" style="display:display;">
+            <div class="card">
+              <div class="card-header">
+                <h3>Registro Clientes</h3>
+              </div>
+              <div class="card-body">
+                <div class="container">
+                  <form id = "frmData" class="form-control">
+                    <div class="row g-3" >
+                        <div class="mb-3 col-4">
+                          <label for="createdAt" class="form-label">Fecha de registro</label>
+                          <input type="date" class="form-control" id="createdAt" name="createdAt" >
+                        </div>
+                        <div class="mb-3 col-4">
+                          <label for="nombres" class="form-label">Nombre del Cliente</label>
+                          <input type="text" class="form-control" id="nombres" name="nombres">
+                        </div>
+                        <div class="mb-3 col-4">
+                          <label for="apellidos" class="form-label">Apellidos</label>
+                          <input type="text" class="form-control" id="apellidos" name="apellidos">
+                        </div>
+                        <div class="mb-3 col-4">
+                          <label for="email" class="form-label">Email cliente</label>
+                          <input type="email" class="form-control" id="email" name="email">
+                        </div>
+                        <div class="mb-3 col-4">
+                          <label for="nroMovil" class="form-label">Nro Movi</label>
+                          <input type="text" class="form-control" id="nroMovil" name="nroMovil">
+                        </div>
+                        <div class="mb-3 col-4">
+                          <label for="fechaNacimiento" class="form-label">Fecha Nacimiento</label>
+                          <input type="date" class="form-control" id="fechaNacimiento" name="fechaNacimiento">
+                        </div>
+                      </form>
+                    </div>
+                  </form>
+                </div>
+                <div class="container mt-4 text-center" >
+                  <a href="#" class="btn btn-primary" id="btnNuevo">Nuevo cliente</a>
+                  <a href="#" class="btn btn-danger" id="btnCancelar">Cancelar registro</a>
+                  <a href="#" class="btn btn-success" id="btnGuardar">Guardar cliente</a>
+                  <a href="#" class="btn btn-warning" id="btnEditar">Editar cliente</a>
+                  <a href="#" class="btn btn-danger" id="btnEliminar">Eliminar cliente</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div  id="listar" style="display:none;">
+            <h3>Listar Clientes</h3>
+          </div>
+          <div  id="buscar" style="display:none;">
+            <h3>Buscar Clientes</h3>
+          </div>
         </div>
     </main>
     <footer></footer>
