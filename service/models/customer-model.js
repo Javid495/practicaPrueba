@@ -1,9 +1,9 @@
 const CustomerModel = {
-    createdAt : '',
-    nombres: '',
-    apellidos :'',
-    email :'',
-    numeroMovil :'',
-    fechaNacimiento :''
+    createdAt ,
+    nombres ,
+    apellidos,
+    email,
+    numeroMovil,
+    fechaNacimiento
 }
 export default CustomerModel;
